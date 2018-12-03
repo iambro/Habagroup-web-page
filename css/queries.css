@@ -143,6 +143,8 @@
     
     tbody { display: table-row-group; }
 
+    th { font-weight: 900 }
+
     td, 
     thead tr { position: static; }
 
