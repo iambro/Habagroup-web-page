@@ -1,10 +1,11 @@
-//Sticky nav
+//Sticky nav for desktop
 window.onscroll = function() {
     stickyFunction()
 };
 
 function colorLinks(hex) {
-    const links = document.getElementsByTagName("a");
+    const linksBox = document.querySelector('.nav-bar');
+    const links = linksBox.getElementsByTagName("a");
     for(var i=0; i < links.length; i++) {
         links[i].style.color = hex;
     }
@@ -12,14 +13,13 @@ function colorLinks(hex) {
 
 const mainNavBox = document.querySelector(".main-nav-box");
 const subNavBox = document.querySelector(".sub-nav-box");
-const sticky = mainNavBox.offsetTop;
-
+const sticky = subNavBox.offsetTop;
 function stickyFunction() {
     if ((window.pageYOffset > sticky) & window.innerWidth > 768) {
       mainNavBox.classList.add("sticky-main")
       subNavBox.classList.add("sticky-sub")
       colorLinks("#666666");
-    } else {
+    } else if ((window.pageYOffset < sticky) & window.innerWidth > 768) {
       mainNavBox.classList.remove("sticky-main")
       subNavBox.classList.remove("sticky-sub")
       colorLinks("#ffffff");
@@ -34,7 +34,6 @@ $('.mobile-nav-icon').click(function(element){
     const subnavBox = $('.sub-nav-box');
     const mainLi = $('.main-nav li a');
     const subLi = $('.sub-nav li a');
-
     const icon = $('.mobile-nav-icon i');
 
     //Opens and closes the menu
@@ -93,7 +92,7 @@ $(window).resize(function(){
 });
 
 
-//Scrolling
+//ScrollingTo
 function scrollTo(element) {
     if (window.innerWidth > 768) {
         window.scroll({
