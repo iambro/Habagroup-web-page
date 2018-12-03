@@ -1,0 +1,57 @@
+
+@media screen and (min-width: 768px) {
+    .mobile-nav-icon {
+        display: none;
+    }
+
+    .main-nav  {
+        display: flex;
+    }
+
+    .sub-nav {
+        display: flex;
+    }
+
+    .sub-nav-box {
+        justify-content: flex-end;
+        background-color: #00000095;
+    }
+    
+    .sticky-sub {
+        background-color: #fff;
+        padding: 0 1rem;
+    }
+
+    .logo {
+        height: 60px;
+    }
+}
+
+
+
+/*TABLE*/
+/*
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr:nth-last-of-type(odd){
+    background: #eeeeee;
+}
+
+th {
+    background: #333333;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    padding: 0.5rem;
+    border: 1px solid #cccccc;
+    text-align: left;
+}
+
+*/
+

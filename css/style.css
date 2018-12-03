@@ -1,0 +1,371 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+section {
+    padding: 1.5rem;
+}
+
+nav {
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.main-nav-box {
+    font-size: 1.4rem;
+    width: 100%;
+    background-color: #00000070;
+    padding: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub-nav-box {
+    font-size: 1.2rem;
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    height: 40px;
+}
+
+.main-nav {
+    list-style: none;
+    display: none;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.main-nav li a{
+    padding: 0.3rem 0;
+    color: #ffffff;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+
+    text-decoration: none;
+    padding: 0.3rem;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    transition: all 0.4s ease-in-out;
+}
+
+.main-nav li a:hover {
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+
+.sub-nav {
+    list-style: none;
+    display: none;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.sub-nav li {
+    padding: 0.3rem 0;
+}
+
+.sub-nav li a:link,
+.sub-nav li a:visited {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.3rem;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    transition: all 0.4s ease-in-out;
+}
+
+.sub-nav li a:hover {
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+
+
+#home {
+    background-image: url("img/mix-owocow-w-koszyku.jpg");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.hero-box {
+    width: 100%;
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#hero-h1 {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 1rem 0;
+    text-shadow: 2px 2px #000000;
+    max-width: 450px;
+}
+
+#hero-h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 200;
+    padding: 1rem 0;
+    text-shadow: 2px 2px #000000;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    height: 40px;
+    border-radius: 100px;
+    transition: all .4s ease-in-out;
+    color: #f9a70f;
+}
+
+.btn:hover,
+.btn:focus {
+    outline: 0;
+    color: #fff;
+    transform: scale(1.2)
+}
+
+
+
+.btn img {
+    transition-property: transform;
+    transition-duration: 1s;
+    animation: pulse1 1.6s linear infinite;
+}
+
+
+@keyframes pulse1 {
+    0% { transform: translate(0); }
+    50% { transform: translate(0, 10px); }
+    100% { transform: translate(0); }
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 50;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 50;
+}
+
+p {
+    font-size: 1.4rem;
+    text-align: justify;
+    padding: 1rem 0;
+}
+
+#fruits h1:first-of-type:after,
+.img-container:after {
+    display: block;
+    height: 0.1rem;
+    background-color: #f9a70f;
+    content: " ";
+    width: 10rem;
+    margin: 1.5rem auto;
+}
+
+.img-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-container img {
+    width: 48%;
+}
+
+#superfruits {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.text-box {
+    width: 100%;
+    padding: 1rem;
+}
+
+#superfruits img {
+    width: 100%;
+}
+
+#superfruits h2 {
+    font-size: 2rem;
+}
+
+
+/*TABLE*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.2rem;
+}
+
+th {
+    background: #333333;
+    color: white;
+}
+
+td, th {
+    padding: 0.2rem;
+    border: 1px solid #cccccc;
+    text-align: left;
+}
+
+
+table, thead, tbody, th, td, tr {
+    display: block;
+}
+
+thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+tr { border: 1px solid #ccc; }
+
+tr:nth-child(odd) {
+    background: #ccc;
+}
+
+td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 25%;
+}
+
+td:before {
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    width: 25%;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+
+td:nth-of-type(1):before { content: "Lp."; }
+
+td:nth-of-type(2):before { content: "Nazwa"; }
+
+td:nth-of-type(3):before { content: "Gatunek"; }
+
+td:nth-of-type(4):before { content: "Opis"; }
+
+#types {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.description-box {
+    width: 45%;
+    padding-bottom: 2rem;
+}
+
+.description-box img {
+    width: 100%;
+}
+
+.description-text-box {
+    width: 100%;
+}
+
+
+  /*** Mobile Navigation ***/
+.mobile-nav-icon {
+    cursor: pointer;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #ffffffff;
+}
+
+.sticky-main {
+    background-color: #fff;
+    padding-bottom: 0;
+}
+
+
+#contact {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between
+}
+
+.footer {
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-left li {
+    padding: 0.5rem;
+}
+
+.nav-left li a{
+    padding: 0.3rem;
+    color: #666666;
+}
+
+.nav-left li a:link,
+.nav-left li a:visited {
+    text-decoration: none;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid transparent;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav-left li a:hover {
+    border-bottom: 1px solid #666666;
+    cursor: pointer;
+}
