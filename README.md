@@ -17,4 +17,4 @@ Project is created with:
 * jQuery
 
 ## Live page
-https://iambro.github.io/Fit-Calculator-React/
+https://iambro.github.io/Habagroup-web-page/
