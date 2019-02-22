@@ -4,6 +4,7 @@ junior-frontend-recruitment-task
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
+* [Live page](#live-page)
 
 ## General info
 This project is a recruitment task for Habagroup. The project was made in accordance with the guidelines.
@@ -15,3 +16,5 @@ Project is created with:
 * JavaScript
 * jQuery
 
+## Live page
+https://iambro.github.io/Fit-Calculator-React/
